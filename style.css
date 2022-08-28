@@ -1,7 +1,7 @@
 body {
   width: 1440px;
   height: 90vh;
-  background-image: url(/assets/home.png);
+  background-image: url("./assets/home.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -19,12 +19,10 @@ body {
   width: 257px;
   height: 324px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 17px;
-  border-color: antiquewhite;
-  border-style: solid;
-  color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid antiquewhite;
 }
 
 .ancients div img {
@@ -33,14 +31,15 @@ body {
 
 .ancients div :hover {
   cursor: pointer;
-  transform: scale(1.15);
   transition: 0.2s;
+  transform: scale(1.13);
   border: 2px solid antiquewhite;
 }
 
 .levels {
   height: 50%;
   display: flex;
+  margin-top: 10px;
   align-items: center;
   flex-direction: column;
 }
@@ -68,10 +67,9 @@ body {
 }
 
 .levels div :hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.2s;
-    
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .levels p {
@@ -80,5 +78,3 @@ body {
   display: flex;
   justify-content: center;
 }
-
-
