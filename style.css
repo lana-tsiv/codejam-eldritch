@@ -9,6 +9,7 @@ body {
 .ancients {
   height: 50%;
   display: flex;
+  margin-top: 25px;
   justify-content: space-around;
   align-items: center;
   margin-left: 30px;
@@ -38,19 +39,26 @@ body {
 
 .levels {
   height: 50%;
-  display: flex;
+  display: none;
   margin-top: 10px;
+  position: relative;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
 .levels div {
-  width: 225px;
+  height: 40px;
+  width: 200px;
+  margin: 10px 0;
+  padding: 8px 0;
+  font-size: 17px;
+  text-align: center;
   border-radius: 17px;
-  border-color: antiquewhite;
-  border-style: solid;
+  background-size: 200%;
   color: antiquewhite;
-  margin: 10px 5px;
+  box-sizing: border-box;
+  border: 2px solid antiquewhite;
   background-image: linear-gradient(
     45deg,
     #222120,
@@ -62,19 +70,23 @@ body {
     #282b2b,
     #303230
   );
-  background-size: 200%;
-  animation: animateborder 3s ease infinite paused;
 }
 
-.levels div :hover {
+.levels div:hover {
   cursor: pointer;
-  transform: scale(1.1);
   transition: 0.2s;
+  transform: scale(1.07);
 }
 
-.levels p {
-  font: 17px sans-serif;
-  color: antiquewhite;
-  display: flex;
+#Shuffle {
+  top: 0;
+  left: 60%;
+  display: none;
+  margin-top: 25px;
+  color: #090f1b;
+  position: absolute;
+  align-items: center;
   justify-content: center;
+  background: antiquewhite;
+  border: 2px solid red !important;
 }
